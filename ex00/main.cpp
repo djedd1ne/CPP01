@@ -13,7 +13,7 @@ int main(void)
     }
     std::cout << "*********** Heap Zombies ***********" << std::endl;
     Zombie *heap_zombie = newZombie("Mekki_heap");
-    Zombie *heap_zombie2 = newZombie("");
+    Zombie *heap_zombie2 = newZombie("2ndMekki_heap");
     heap_zombie->announce();
     heap_zombie2->announce();
     delete(heap_zombie);
