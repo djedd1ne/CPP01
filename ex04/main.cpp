@@ -16,9 +16,6 @@
 #include <sstream>
 
 int main(int ac, char **av){
-    std::string argument1(av[1]);
-    std::string s1(av[2]);
-    std::string s2(av[3]);
     std::ifstream file_in;
     std::ofstream file_out;
     std::stringstream buffer;
@@ -31,6 +28,9 @@ int main(int ac, char **av){
         << std::endl;
         return(1);
     }
+    std::string argument1(av[1]);
+    std::string s1(av[2]);
+    std::string s2(av[3]);
     file_in.open(argument1);
     if (file_in.is_open())
     {
